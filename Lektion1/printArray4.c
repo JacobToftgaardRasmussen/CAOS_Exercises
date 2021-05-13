@@ -6,11 +6,18 @@ void createArray(long* a){
     }
 }
 
+void swap(long* a){
+    long temp = a[5];
+    a[5] = a[0];
+    a[0] = temp;
+}
+
 int main(){
     long a[20];
     createArray(a);
-    long* x = &a[3];
-    printf("%p", x);
-
+    swap(a);
+    for(int i = 0; i < 20; i++){
+        printf("%lu ", a[i]);
+    }
     return 0;
 }

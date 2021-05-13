@@ -10,7 +10,6 @@ int main(){
     long a[20];
     createArray(a);
     long* x = &a[3];
-    printf("%p", x);
-
+    printf("%lu", *x);
     return 0;
 }
